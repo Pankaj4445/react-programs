@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First React</title>
+</head>
+<body>
+    <h1>First react app</h1>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+
+    <script>
+        
+
+
+
+        //create react element
+        const el = React.createElement(
+            'h1',
+            null,
+            'Hello React'
+        );
+        const container = document.getElementById("root");
+        const root = ReactDOM.createRoot(container);
+
+        //render our react in virtualelemrnt
+        root.render(el);
+    </script>
+</body>
+</html>
